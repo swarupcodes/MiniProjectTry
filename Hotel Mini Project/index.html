@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header part nav and logo -->
+
+    <nav>
+        <div class="logo">
+            <h4>Book My Hotel</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#hotels">Hotel</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- Main section after nav bar -->
+
+    <main>
+        <div class="hero" id="hero">
+            <div class="container">
+                <div class="main-heading">
+                    <h1 class="title">Welcome</h1>
+                    <h2 class="subtitle">Find the hotel of your choice</h2>
+                </div>
+                <a href="#" class="btn btn-gradient-hero">Read More
+                    
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- new section booking section -->
+
+    <section class="booking">
+        <div class="container">
+            <form action="" class="book-form">
+                <div class="input-group">
+                    <label for="destination" class="input-label">Destination</label>
+                    <input type="text" class="input" id="destination">
+                </div>
+                <div class="input-group">
+                    <label for="check-in" class="input-label">Check in</label>
+                    <input type="date" class="input" id="check-in">
+                </div>
+                <div class="input-group">
+                    <label for="check-out" class="input-label">Check out</label>
+                    <input type="date" class="input" id="check-out">
+                </div>
+                <div class="input-group">
+                    <label for="adults" class="input-label">Adult</label>
+                    <select class="option" id="adults">
+                        <option value="0">0</option>
+                        <option value="0">1</option>
+                        <option value="0">2</option>
+                        <option value="0">3</option>
+                        <option value="0">4</option>
+                        <option value="0">5</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="children" class="input-label">Children</label>
+                    <select class="option" id="children">
+                        <option value="0">0</option>
+                        <option value="0">1</option>
+                        <option value="0">2</option>
+                        <option value="0">3</option>
+                        <option value="0">4</option>
+                        <option value="0">5</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn form-btn btn-black">Submit
+                    
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Hotel section -->
+
+
+    <section class="hotels" id="hotels">
+        <div class="container">
+            <h5 class="section-head">
+                <span class="heading">Discover</span>
+                <span class="sub-heading">Beautiful hotels</span>
+            </h5>
+            <div class="grid">
+                <div class="grid-items featured-hotels">
+                    <img src="images/Country-villa.jpg" alt="" class="hotel-image">
+                    <h5 class="hotel-name">Hotel Country Villa</h5>
+                    <span class="hotel-price">Rs 3000 / Day</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star-half rating"></i>
+                    </div>
+                    <a href="#" class="btn btn-gradient-hotel">Book now
+                        
+                    </a>
+                </div>
+
+                <div class="grid-items featured-hotels">
+                    <img src="images/Himalaya-Hotel.jpg" alt="" class="hotel-image">
+                    <h5 class="hotel-name">Himalaya Hotel</h5>
+                    <span class="hotel-price">Rs 2800 / Day</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                    </div>
+                    <a href="#" class="btn btn-gradient-hotel">Book now
+                        
+                    </a>
+                </div>
+
+                <div class="grid-items featured-hotels">
+                    <img src="images/Hotel-Mystic-Mountain.jpg" alt="" class="hotel-image">
+                    <h5 class="hotel-name">Hotel Mystic Mountain</h5>
+                    <span class="hotel-price">Rs 4000 / Day</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star-half rating"></i>
+                    </div>
+                    <a href="#" class="btn btn-gradient-hotel">Book now
+                        
+                    </a>
+                </div>
+
+                <div class="grid-items featured-hotels">
+                    <img src="images/Hyatt-Hotel.jpg" alt="" class="hotel-image">
+                    <h5 class="hotel-name">Hyatt Hotel</h5>
+                    <span class="hotel-price">Rs 5000 / Day</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star-half rating"></i>
+                    </div>
+                    <a href="#" class="btn btn-gradient-hotel">Book now
+                        
+                    </a>
+                </div>
+                <div class="grid-items featured-hotels">
+                    <img src="images/Kantipur-Hotel.jpg" alt="" class="hotel-image">
+                    <h5 class="hotel-name">Kantipur Hotel</h5>
+                    <span class="hotel-price">Rs 1000 / Day</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star-half rating"></i>
+                    </div>
+                    <a href="#" class="btn btn-gradient-hotel">Book now
+                        
+                    </a>
+                </div>
+                <div class="grid-items featured-hotels">
+                    <img src="images/Radisson.jpg" alt="" class="hotel-image">
+                    <h5 class="hotel-name">Radisson Hotel</h5>
+                    <span class="hotel-price">Rs 5000 / Day</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star-half rating"></i>
+                    </div>
+                    <a href="#" class="btn btn-gradient-hotel">Book now
+                        
+                    </a>
+                </div>
+                <div class="grid-items featured-hotels">
+                    <img src="images/Soaltee-Hotel.jpg" alt="" class="hotel-image">
+                    <h5 class="hotel-name">Soaltee Hotel</h5>
+                    <span class="hotel-price">Rs 6000 / Day</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star-half rating"></i>
+                    </div>
+                    <a href="#" class="btn btn-gradient-hotel">Book now
+                        
+                    </a>
+                </div>
+                <div class="grid-items featured-hotels">
+                    <img src="images/Mount-View.jpg" alt="" class="hotel-image">
+                    <h5 class="hotel-name">Mountain View Hotel</h5>
+                    <span class="hotel-price">Rs 2500 / Day</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star-half rating"></i>
+                    </div>
+                    <a href="#" class="btn btn-gradient-hotel">Book now
+                        
+                    </a>
+                </div>
+                <div class="grid-items featured-hotels">
+                    <img src="images/Dawrika Hotel second.png" alt="" class="hotel-image">
+                    <h5 class="hotel-name">Dwarika Hotel</h5>
+                    <span class="hotel-price">Rs 5200 / Day</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star-half rating"></i>
+                    </div>
+                    <a href="#" class="btn btn-gradient-hotel">Book now
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="rooms">
+        <div class="container">
+            <h5 class="section-head">
+                <span class="heading">Cozy</span>
+                <span class="sub-heading">Affordable rooms</span>
+            </h5>
+            <div class="grid ">
+                <div class="grid-items">
+                    <div class="image-wrap">
+                        <img src="images/room1.jpg" class="room-image" alt="">
+
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">Rs 1000 <span class="per-night">Per night</span></span>
+                        <p class="paragraph">
+                            Affordable deluxe room double bed. This rooms comes with a personal mini fridge, a 43 inch uhd tv, and air conditioner. This room has a beautiful interior with a small balcony from where you can observe the sun rise and sunset.
+                        </p>
+                        <a href="" class="btn rooms-btn">Book now </a>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img src="images/room2.jpg" class="room-image" alt="">
+
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">Rs 2000 <span class="per-night">Per night</span></span>
+                        <p class="paragraph">
+                            Affordable deluxe room single king size bed. This rooms comes with a personal mini fridge, a 43 inch uhd tv, and air conditioner. This room has a beautiful interior with a small balcony from where you can observe the sun rise and sunset.
+                        </p>
+                        <a href="" class="btn rooms-btn">Book now </a>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img src="images/room3.jpg" class="room-image" alt="">
+
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">Rs 3000 <span class="per-night">Per night</span></span>
+                        <p class="paragraph">
+                            Affordable deluxe room single king size bed. This rooms comes with a personal mini fridge, a 43 inch uhd tv, and air conditioner. This room has a beautiful interior with a small balcony from where you can observe the sun rise and sunset.
+                        </p>
+                        <a href="" class="btn rooms-btn">Book now </a>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img src="images/room4.jpg" class="room-image" alt="">
+
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">RS 4000 <span class="per-night">Per night</span></span>
+                        <p class="paragraph">
+                            Affordable deluxe room single king size bed. This rooms comes with a personal mini fridge, a 43 inch uhd tv, and air conditioner. This room has a beautiful interior with a small balcony from where you can observe the sun rise and sunset.
+                            <a href="#" class="btn rooms-btn">Book now </a>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img src="images/room5.jpg" class="room-image" alt="">
+
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">Rs 5000 <span class="per-night">Per night</span></span>
+                        <p class="paragraph">
+                            Affordable deluxe room single king size bed. This rooms comes with a personal mini fridge, a 43 inch uhd tv, and air conditioner. This room has a beautiful interior with a small balcony from where you can observe the sun rise and sunset.
+                        </p>
+                        <a href="" class="btn rooms-btn">Book now </a>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img src="images/room6.jpg" class="room-image" alt="">
+
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">Rs 6000 <span class="per-night">Per night</span></span>
+                        <p class="paragraph">
+                            Affordable deluxe room single king size bed. This rooms comes with a personal mini fridge, a 43 inch uhd tv, and air conditioner. This room has a beautiful interior with a small balcony from where you can observe the sun rise and sunset.
+                        </p>
+                        <a href="" class="btn rooms-btn">Book now </a>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img src="images/room7.jpg" class="room-image" alt="">
+
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">Rs 7000 <span class="per-night">Per night</span></span>
+                        <p class="paragraph">
+                            Affordable deluxe room single king size bed. This rooms comes with a personal mini fridge, a 43 inch uhd tv, and air conditioner. This room has a beautiful interior with a small balcony from where you can observe the sun rise and sunset.
+                        </p>
+                        <a href="" class="btn rooms-btn">Book now </a>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img src="images/room8.jpg" class="room-image" alt="">
+
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">RS 8000 <span class="per-night">Per night</span></span>
+                        <p class="paragraph">
+                            Affordable deluxe room single king size bed. This rooms comes with a personal mini fridge, a 43 inch uhd tv, and air conditioner. This room has a beautiful interior with a small balcony from where you can observe the sun rise and sunset.
+                        </p>
+                        <a href="" class="btn rooms-btn">Book now </a>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img src="images/room9.jpg" class="room-image" alt="">
+
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">Rs 9000 <span class="per-night">Per night</span></span>
+                        <p class="paragraph">
+                            Affordable deluxe room single king size bed. This rooms comes with a personal mini fridge, a 43 inch uhd tv, and air conditioner. This room has a beautiful interior with a small balcony from where you can observe the sun rise and sunset.
+                        </p>
+                        <a href="" class="btn rooms-btn">Book now </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h5 class="section-head">
+                <span class="heading">Contact</span>
+                <span class="sub-heading">Get in touch with us</span>
+            </h5>
+            <div class="contact-content">
+
+                <form action="" class="form contact-form">
+                    <div class="input-group-wrap">
+                        <div class="input-group">
+                            <input type="text" class="input" placeholder="Name">
+                            <!-- <span class="bar"></span> -->
+                        </div>
+                        <div class="input-group">
+                            <input type="email" class="input" placeholder="E-mail">
+                            <!-- <span class="bar"></span> -->
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <input type="input" class="input" placeholder="Subject">
+                        <!-- <span class="bar"></span> -->
+                    </div>
+                    <div class="input-group">
+                        <textarea class="input" cols="30" rows="8" placeholder="E-mail"></textarea>
+                        <!-- <span class="bar"></span> -->
+                    </div>
+                    <button type="submit" class="btn form-btn btn-black">Send Message
+                    
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer content -->
+
+    <footer class="footer">
+        <div class="container">
+
+            <!-- Every content of footer including logo paragraph and social media links -->
+
+            <div class="footer-content">
+
+                <!-- Footer paragraph ra logo ko chuttai div -->
+
+                <div class="footer-content-brand">
+                    <a href="index.html" class="logo">
+                        <img class="logo-image" src="e.jpg" alt="">
+                    </a>
+                    <div class="paragraph">
+                        For more information, details and booking please contact us via social media. Thank you. Namaste.
+                    </div>
+                </div>
+
+                <!-- Social media ko chuttai div -->
+
+                <div class="social-media-wrap">
+                    <h4 class="footer-header">Follow us</h4>
+                    <div class="social-media">
+                        <a href="#" class="sm-link"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-pinterest"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

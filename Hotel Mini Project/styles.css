@@ -1,0 +1,380 @@
+    /*Importing the fonts from google fonts*/
+    
+    @import url('https://fonts.googleapis.com/css?family=Courgette|Open+Sans|Roboto:100,400,800&display=swap');
+    /*Base alignment*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* global styles */
+    
+    html {
+        font-size: 10px;
+    }
+    
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    section {
+        /* top down padding 50px left right 0px */
+        padding: 50px 0;
+    }
+    /* reusable styles */
+    
+    .container {
+        width: 80%;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    
+    .btn {
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 20px;
+        display: inline-flex;
+    }
+    
+    .form-btn {
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+    
+    .btn-gradient {
+        background-color: black;
+    }
+    
+    .btn-gradient-hero {
+        background: white;
+        color: black;
+    }
+    
+    .btn-gradient-hotel {
+        background: white;
+        color: black;
+    }
+    
+    .btn-gradient-hotel:hover {
+        background: black;
+        color: white;
+    }
+    
+    .btn-black {
+        background: white;
+        color: black;
+    }
+    /* Nav bar settings */
+    
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    
+    .logo {
+        color: white;
+        letter-spacing: 10px;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+    }
+    
+    .nav-links li {
+        list-style: none;
+    }
+    
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .nav-links a:hover {
+        color: grey;
+    }
+    /* Hero section */
+    
+    .hero {
+        width: 100%;
+        height: 100vh;
+        background: url("images/Dawrika\ Hotel.jpg") center no-repeat;
+        background-size: cover;
+        display: flex;
+        text-align: left;
+        align-items: center;
+        z-index: 0;
+    }
+    
+    .main-heading {
+        color: white;
+        margin-bottom: 50px;
+    }
+    
+    .title {
+        font-size: 90px;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        font-weight: bold;
+    }
+    
+    .subtitle {
+        font-size: 20px;
+        font-weight: 100;
+        letter-spacing: 2px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
+    }
+    /* booking section */
+    
+    .booking {
+        background: black;
+    }
+    
+    .book-form {
+        margin: 0 10%;
+    }
+    
+    .input-group {
+        margin-bottom: 15px;
+    }
+    
+    .input-label {
+        display: block;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    
+    .input,
+    .option {
+        outline: none;
+        border: none;
+        width: 100%;
+        margin: 0 auto;
+        min-height: 4rem;
+        padding: 1rem;
+        font-weight: bold;
+        color: #a5a5a5;
+        letter-spacing: 2px;
+        font-family: "Open Sans", sans-serif;
+    }
+    /* Featured hotels section styles */
+    
+    .section-head {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .heading {
+        display: block;
+        font-size: 4rem;
+        text-transform: uppercase;
+        padding-bottom: 2rem;
+    }
+    
+    .sub-heading {
+        font-size: 1.7rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: #a5a5a5;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 25px;
+    }
+    
+    .grid-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .featured-hotels {
+        height: 350px;
+        color: white;
+        position: relative;
+        z-index: 0;
+    }
+    
+    .featured-hotels::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: -1;
+    }
+    
+    .hotel-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+    
+    .hotel-name {
+        font-size: 2.6rem;
+    }
+    
+    .hotel-price {
+        font-size: 1.8rem;
+    }
+    
+    .hotel-rating {
+        margin: 1rem 0 2.5rem;
+    }
+    
+    .rating {
+        color: white;
+    }
+    /* room section styles */
+    
+    .rooms {
+        background-color: #f2f6f9;
+    }
+    
+    .image-wrap {
+        position: relative;
+        height: 250px;
+    }
+    
+    .image-wrap::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    
+    .room-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .room-price {
+        display: block;
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: black
+    }
+    
+    .per-night {
+        color: grey;
+        font-size: 1.4rem;
+        font-weight: 100;
+    }
+    
+    .rooms-btn {
+        color: black;
+        padding: 0;
+        transition: color .5s;
+    }
+    /* Contact section style */
+    
+    .contact-content {
+        margin: 0 10%;
+    }
+    
+    .contact-form {
+        width: 100%;
+        background: black;
+        padding: 60px;
+    }
+    
+    .contact-form .input {
+        display: block;
+        background-color: transparent;
+        color: white;
+        border-bottom: 2px solid white;
+        padding-left: 0;
+    }
+    /* Footer Part*/
+    
+    .footer {
+        padding: 50px 0;
+        background-color: black;
+        color: white;
+    }
+    
+    .footer-content-brand {
+        /* tala 5rem dhakaldincha */
+        padding-bottom: 5rem;
+    }
+    
+    .footer .paragraph {
+        /* paragraph has diffn color previously so to select this specific p we use two class calls */
+        color: inherit;
+        text-align: center;
+    }
+    
+    .footer-header {
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
+        text-align: center;
+    }
+    
+    .social-media {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sm-link {
+        width: 50px;
+        height: 50px;
+        display: flex;
+    }
+    
+    .sm-link:hover {
+        background-color: white;
+        color: black;
+    }
+    
+    .sm-link i {
+        /* hover bela center ma lyauna */
+        margin: auto;
+    }
